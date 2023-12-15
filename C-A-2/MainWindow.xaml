@@ -7,8 +7,8 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800" Loaded="Window_loaded">
     <Grid>
-        <ListBox x:Name="lbx_Teams" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="22,182,627,23"/>
-        <ListBox x:Name="lbx_players" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="231,182,418,23"/>
+        <ListBox x:Name="lbx_Teams" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="22,182,627,23" SelectionChanged="lbx_Teams_SelectionChanged"/>
+        <ListBox x:Name="lbx_players" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="231,182,418,23" SelectionChanged="lbx_players_SelectionChanged"/>
         <Button x:Name="btn_Win" Content="Win" HorizontalAlignment="Left" Margin="624,184,0,0" VerticalAlignment="Top" Width="81" Click="btn_Win_Click"/>
         <Button x:Name="btn_Lose" Content="Loss" HorizontalAlignment="Left" Margin="624,217,0,0" VerticalAlignment="Top" Width="81" Click="btn_Lose_Click"/>
         <Button x:Name="btn_Draw" Content="Draw" HorizontalAlignment="Left" Margin="624,250,0,0" VerticalAlignment="Top" Width="81" Click="btn_Draw_Click"/>

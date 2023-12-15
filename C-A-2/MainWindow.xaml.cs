@@ -53,15 +53,13 @@ namespace C_A_2
         {
             //call method
             GetData();
-
-            //sort teams
-            teams.Sort();
+       
             //display items in listbox
             lbx_Teams.ItemsSource = teams;
 
             img_star_1.Source = new BitmapImage(new Uri("staroutline.png", UriKind.Relative));
             img_star_2.Source = new BitmapImage(new Uri("staroutline.png", UriKind.Relative));
-            img_Star_3.Source = new BitmapImage(new Uri("staroutline.png", UriKind.Relative));
+            img_star_3.Source = new BitmapImage(new Uri("staroutline.png", UriKind.Relative));
         }
 
         public void GetData()
@@ -143,7 +141,7 @@ namespace C_A_2
                 lbx_players.Items.Clear();
                 lbx_players.ItemsSource = selected.Player;
 
-                teams.Sort();
+                
 
                 lbx_Teams.ItemsSource = null;
                 lbx_Teams.ItemsSource = teams;
